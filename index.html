@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio" />
+    <title>Portfolio</title>
+    <link rel="preload" as="image" href="/images/avatar.png" />
+    <link rel="preload" as="image" href="/images/editor-image.jpg" />
+    <link rel="preload" as="image" href="/images/storyboard.jpg" />
+    <link rel="stylesheet" href="/src/global.css" />
+  </head>
+  <body>
+    <header
+      class="mx-auto flex max-w-173 items-center justify-between gap-4 px-6 py-6 sm:py-8"
+    >
+      <a href="/" class="flex min-w-0 items-center gap-3" aria-label="Home">
+        <img
+          src="/images/avatar.png"
+          alt="Minwoo Kim"
+          class="size-11 shrink-0 rounded-full bg-gray-300 shadow-border"
+          width="44"
+          height="44"
+          decoding="sync"
+          fetchpriority="high"
+        />
+        <div class="min-w-0">
+          <p class="truncate font-medium leading-snug text-gray-1200">
+            Minwoo Kim
+          </p>
+          <p class="truncate text-sm leading-snug text-gray-1100">
+            Frontend Engineer
+          </p>
+        </div>
+      </a>
+      <nav
+        class="flex shrink-0 items-center text-gray-1100"
+        aria-label="Primary navigation"
+      >
+        <a
+          class="flex size-9 items-center justify-center rounded-full transition-colors duration-200 hover:bg-gray-300 hover:text-gray-1200"
+          href="mailto:kimmin1253@gmail.com"
+          aria-label="Email"
+        >
+          <svg
+            class="size-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M4 6.5h16v11H4z" />
+            <path d="m4 7 8 6 8-6" />
+          </svg>
+          <span class="sr-only">Email</span>
+        </a>
+        <a
+          class="flex size-9 items-center justify-center rounded-full transition-colors duration-200 hover:bg-gray-300 hover:text-gray-1200"
+          href="https://github.com/kimmin920"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+        >
+          <svg
+            class="size-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.59 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.99c.85 0 1.71.12 2.51.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.95.68 1.91 0 1.38-.01 2.49-.01 2.83 0 .27.18.59.69.49A10.15 10.15 0 0 0 22 12.25C22 6.59 17.52 2 12 2Z"
+            />
+          </svg>
+          <span class="sr-only">GitHub</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="my-6">
+      <section
+        class="mx-auto max-w-173 px-6 pb-16 pt-6 leading-relaxed sm:pb-24 sm:pt-16"
+      >
+        <p class="mb-4 text-gray-1100">
+          I’m a Frontend Engineer focused on building production-grade visual
+          editors and interactive web tools in React.
+        </p>
+        <p class="mb-4 text-gray-1100">
+          I’ve built web builders, drag-and-drop layout systems, responsive
+          editing tools, and React Flow-based node interfaces for real business
+          products. I care about making complex systems feel simple through
+          thoughtful interaction design, motion, and polished UI details.
+        </p>
+      </section>
+
+      <section
+        id="showcase"
+        class="carousel relative w-full"
+        aria-label="Showcase"
+      >
+        <div class="carousel-track" tabindex="0">
+          <article
+            class="carousel-slide carousel-slide-editor view-transition-visual-editor"
+          >
+            <a
+              href="/projects/visual-editor/"
+              class="carousel-slide-link"
+              aria-label="Open Visual Editor project"
+            >
+              <div class="editor-preview-image h-full w-full"></div>
+              <div class="portfolio-image-meta">
+                <span class="portfolio-image-title">Visual Editor</span>
+                <span class="portfolio-image-link" aria-hidden="true">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5.66667 3.66666H12.3333V10.3333M12.3333 3.66666L4 12"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+          </article>
+          <article
+            class="carousel-slide carousel-slide-storyboard view-transition-storyboard-flow"
+          >
+            <a
+              href="/projects/storyboard-flow/"
+              class="carousel-slide-link"
+              aria-label="Open Storyboard Flow project"
+            >
+              <img
+                src="/images/storyboard.jpg"
+                alt=""
+                decoding="sync"
+                fetchpriority="high"
+                class="h-full w-full object-cover"
+              />
+              <div class="portfolio-image-meta">
+                <span class="portfolio-image-title">Storyboard Flow</span>
+                <span class="portfolio-image-link" aria-hidden="true">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5.66667 3.66666H12.3333V10.3333M12.3333 3.66666L4 12"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <button
+          type="button"
+          aria-label="Scroll left"
+          class="carousel-button carousel-button-left"
+          data-carousel-prev
+        >
+          <svg
+            viewBox="0 0 24 24"
+            class="h-5 w-5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M15 18l-6-6 6-6"></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          aria-label="Scroll right"
+          class="carousel-button carousel-button-right"
+          data-carousel-next
+        >
+          <svg
+            viewBox="0 0 24 24"
+            class="h-5 w-5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M9 18l6-6-6-6"></path>
+          </svg>
+        </button>
+      </section>
+
+      <section class="side-projects" aria-labelledby="side-projects-title">
+        <h2 id="side-projects-title" class="side-projects-heading">
+          SIDE PROJECTS
+        </h2>
+        <ul class="side-projects-list">
+          <li>
+            <a class="side-projects-link" href="/projects/one-line/">
+              <span class="side-projects-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 19.5V5.75A2.75 2.75 0 0 1 6.75 3H20v16H6.75A2.75 2.75 0 0 0 4 21.75"></path>
+                  <path d="M8 7h8"></path>
+                  <path d="M8 10.5h6"></path>
+                </svg>
+              </span>
+              <span class="side-projects-copy">
+                <span class="side-projects-title-row">
+                  <span class="side-projects-title">One Line</span>
+                  <span class="side-projects-type">Expo / Mobile Web</span>
+                </span>
+                <span class="side-projects-description">
+                  A personal bookshelf built around one sentence per book
+                </span>
+              </span>
+              <span class="side-projects-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="side-projects-link"
+              href="/projects/bao-man-save-the-city/"
+            >
+              <span class="side-projects-icon side-projects-icon-image" aria-hidden="true">
+                <img src="/images/save-the-city.png" alt="" loading="lazy" />
+              </span>
+              <span class="side-projects-copy">
+                <span class="side-projects-title-row">
+                  <span class="side-projects-title">Bao Man: Save The city</span>
+                  <span class="side-projects-type">Web Game</span>
+                </span>
+                <span class="side-projects-description">
+                  Codex-built beat ’em up prototype from parsed game assets
+                </span>
+              </span>
+              <span class="side-projects-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="experience-section" aria-labelledby="experience-title">
+        <h2 id="experience-title" class="experience-heading">EXPERIENCE</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-meta">
+              <span class="experience-company">NOTI</span>
+              <span>Present</span>
+            </div>
+            <h3>Founder / Full-stack Developer</h3>
+            <p>
+              Building a SaaS messaging platform for business owners across
+              product UI, backend APIs, campaign sending, templates, automation,
+              and operational reliability.
+            </p>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-meta">
+              <a
+                class="experience-company"
+                href="https://publ.co/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Publ
+              </a>
+              <span>2025 - Feb 2026 · Remote</span>
+            </div>
+            <h3>Freelance Frontend Engineer</h3>
+            <p>
+              Continued improving the web builder, focusing on nested grouping,
+              bounding-box based group controls, advanced layout behavior,
+              carousel and complex content blocks, and editor performance.
+            </p>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-meta">
+              <a
+                class="experience-company"
+                href="https://publ.co/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Publ
+              </a>
+              <span>2021 - 2024</span>
+            </div>
+            <h3>Frontend Engineer / Web Builder TPM</h3>
+            <p>
+              Built and launched production web builder features across
+              responsive layout editing, drag-and-drop interactions, reusable
+              blocks, publishing workflows, and performance-sensitive editor UI.
+            </p>
+          </article>
+        </div>
+
+        <div class="education-block">
+          <h2 class="experience-heading">EDUCATION</h2>
+          <p>
+            Korea National Open University
+            <span>B.S. Computer Science · 2023 - 2025</span>
+          </p>
+        </div>
+      </section>
+
+    </main>
+    <script>
+      const showcase = document.querySelector("#showcase");
+      const track = showcase?.querySelector(".carousel-track");
+      const prevButton = showcase?.querySelector("[data-carousel-prev]");
+      const nextButton = showcase?.querySelector("[data-carousel-next]");
+      const scrollStorageKey = "portfolio:main-scroll-y";
+      const shouldRestoreScrollKey = "portfolio:restore-main-scroll";
+
+      function updateCarouselButtons() {
+        if (!track || !prevButton || !nextButton) return;
+
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        const canScrollLeft = track.scrollLeft > 1;
+        const canScrollRight = track.scrollLeft < maxScroll - 1;
+
+        prevButton.style.opacity = canScrollLeft ? "1" : "0";
+        prevButton.style.pointerEvents = canScrollLeft ? "auto" : "none";
+        nextButton.style.opacity = canScrollRight ? "1" : "0";
+        nextButton.style.pointerEvents = canScrollRight ? "auto" : "none";
+      }
+
+      function scrollShowcase(direction) {
+        if (!track) return;
+        track.scrollBy({
+          left: direction * track.clientWidth,
+          behavior: "smooth",
+        });
+      }
+
+      prevButton?.addEventListener("click", () => scrollShowcase(-1));
+      nextButton?.addEventListener("click", () => scrollShowcase(1));
+      document.querySelectorAll(".carousel-slide-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          sessionStorage.setItem(scrollStorageKey, String(window.scrollY));
+          sessionStorage.setItem(shouldRestoreScrollKey, "true");
+        });
+      });
+      track?.addEventListener("scroll", updateCarouselButtons, {
+        passive: true,
+      });
+      window.addEventListener("resize", updateCarouselButtons);
+      window.addEventListener("pagehide", () => {
+        if (location.pathname === "/") {
+          sessionStorage.setItem(scrollStorageKey, String(window.scrollY));
+        }
+      });
+
+      if (sessionStorage.getItem(shouldRestoreScrollKey) === "true") {
+        const savedScrollY = Number(sessionStorage.getItem(scrollStorageKey));
+        sessionStorage.removeItem(shouldRestoreScrollKey);
+
+        if (Number.isFinite(savedScrollY)) {
+          requestAnimationFrame(() => {
+            window.scrollTo({ top: savedScrollY, left: 0, behavior: "auto" });
+            updateCarouselButtons();
+          });
+        }
+      }
+
+      updateCarouselButtons();
+    </script>
+  </body>
+</html>

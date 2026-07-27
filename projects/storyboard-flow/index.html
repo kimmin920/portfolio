@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Storyboard Flow project" />
+    <title>Storyboard Flow | Portfolio</title>
+    <link rel="preload" as="image" href="/images/storyboard.jpg" />
+    <link rel="stylesheet" href="/src/global.css" />
+  </head>
+  <body>
+    <main class="mx-auto max-w-173 px-6 py-12 leading-relaxed sm:py-24">
+      <a
+        href="/"
+        class="link-outline article-underline font-medium text-gray-1200 transition-colors duration-200 ease-out"
+      >
+        Back
+      </a>
+
+      <figure
+        class="view-transition-storyboard-flow mt-8 overflow-hidden rounded-2xl bg-preview-bg shadow-custom"
+      >
+        <img
+          src="/images/storyboard.jpg"
+          alt=""
+          class="w-full"
+          decoding="sync"
+          fetchpriority="high"
+        />
+      </figure>
+
+      <section class="mt-8">
+        <p class="mb-2 text-gray-1100">Project</p>
+        <h1
+          class="view-transition-storyboard-flow-title text-2xl font-medium leading-snug text-gray-1200"
+        >
+          Storyboard
+        </h1>
+        <p class="mt-2 text-sm text-gray-1000">
+          Built at
+          <a
+            class="font-medium text-gray-1200 underline decoration-gray-600 underline-offset-4 transition-colors duration-200 hover:decoration-gray-1200"
+            href="https://publ.co/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Publ
+          </a>
+        </p>
+        <p class="mt-4 text-gray-1100">
+          An interactive node-based visualization of the service’s page and
+          navigation hierarchy, built with React Flow. It provides a visual way
+          to explore complex relationships between pages, pApps, and their
+          navigation structure within the service.
+        </p>
+        <h2 class="mt-8 font-medium text-gray-1200">Features</h2>
+        <ul class="project-feature-list">
+          <li>
+            <strong>Custom Auto Layout</strong> — Recursively traversed the
+            hierarchy to calculate subtree heights and dynamically position
+            nodes with consistent spacing, preventing overlaps in complex page
+            structures.
+          </li>
+          <li>
+            <strong>Hierarchical Path Highlighting</strong> — Used DFS-based
+            traversal to identify ancestor nodes and automatically highlight the
+            entire path from the root to the selected descendant.
+          </li>
+          <li>
+            <strong>Permission-aware Visualization</strong> — Visualized access
+            permissions for Guest, Member, and Membership users through dynamic
+            node and edge colors.
+          </li>
+          <li>
+            <strong>Default Flow Visualization</strong> — Clearly distinguished
+            default navigation paths to make the service’s page and navigation
+            structure easier to understand.
+          </li>
+          <li>
+            <strong>Interactive Storyboard Navigation</strong> — Highlighted
+            related nodes and edges on selection and automatically centered the
+            selected node within the viewport.
+          </li>
+        </ul>
+      </section>
+
+      <section class="mt-12" aria-label="Demo videos">
+        <h2 class="mb-5 font-medium text-gray-1200">Demo</h2>
+        <div class="project-video-list">
+          <article class="project-video-card">
+            <video
+              class="project-video"
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              poster="/images/storyboard-flow-poster.jpg"
+              src="/videos/storyboard-flow.mp4"
+            ></video>
+            <div class="project-video-copy">
+              <h2>Storyboard navigation</h2>
+              <p>
+                Demonstrates exploring a node-based page hierarchy, selecting
+                related paths, and reviewing navigation and permission states in
+                context.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

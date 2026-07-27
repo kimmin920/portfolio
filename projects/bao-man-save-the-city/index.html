@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bao Man: Save The city project" />
+    <title>Bao Man: Save The city | Portfolio</title>
+    <link rel="preload" as="image" href="/images/save-the-city-cover.jpg" />
+    <link rel="stylesheet" href="/src/global.css" />
+  </head>
+  <body>
+    <main class="mx-auto max-w-173 px-6 py-12 leading-relaxed sm:py-24">
+      <a
+        href="/"
+        class="link-outline article-underline font-medium text-gray-1200 transition-colors duration-200 ease-out"
+      >
+        Back
+      </a>
+
+      <figure
+        class="mt-8 flex aspect-video items-center justify-center overflow-hidden rounded-2xl bg-preview-bg shadow-custom"
+      >
+        <img
+          src="/images/save-the-city-cover.jpg"
+          alt=""
+          class="h-full w-full object-cover"
+          decoding="sync"
+          fetchpriority="high"
+        />
+      </figure>
+
+      <section class="mt-8">
+        <p class="mb-2 text-gray-1100">Project</p>
+        <h1 class="text-2xl font-medium leading-snug text-gray-1200">
+          Bao Man: Save The city
+        </h1>
+        <p class="mt-4 text-gray-1100">
+          A browser-based beat ’em up game prototype built with Codex. The
+          project focused on recreating the feel of a 3D arena fighting game by
+          analyzing existing game materials and rebuilding the core movement,
+          combat, item, and stage interactions for the web.
+        </p>
+        <p class="mt-4 text-gray-1100">
+          To improve implementation accuracy, I built supporting tools such as a
+          3D character editor and map editor, then used them to tune character
+          setup, stage placement, combat behavior, and gameplay details instead
+          of relying on AI output alone.
+        </p>
+        <p class="mt-4 text-gray-1100">
+          Instead of treating AI as a one-shot solution, I used a
+          divide-and-conquer workflow: separating the work into characters,
+          textures, maps, animations, and gameplay behavior, then using AI
+          assistance within each domain before integrating everything into a
+          playable 3D browser game.
+        </p>
+        <p class="mt-6">
+          <a
+            href="https://savecity.vizuo.work/"
+            target="_blank"
+            rel="noreferrer"
+            class="article-underline font-medium text-gray-1200 transition-colors duration-200 ease-out"
+          >
+            Open playable prototype
+          </a>
+        </p>
+      </section>
+
+      <section class="mt-12" aria-label="Demo videos">
+        <h2 class="mb-5 font-medium text-gray-1200">Demo</h2>
+        <div class="project-video-list">
+          <article class="project-video-card">
+            <video
+              class="project-video"
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              poster="/images/save-the-city-cover.jpg"
+              src="/videos/save-the-city-demo.mp4"
+            ></video>
+            <div class="project-video-copy">
+              <h2>Play demo</h2>
+              <p>
+                Shows a playable beat ’em up demo with two character fighting
+                styles, customizable character faces, and combat built around
+                skills, items, and defeating waves of enemies.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+@import "@fontsource-variable/inter";
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter Variable Fallback";
+  src: local("Arial");
+  ascent-override: 89.79%;
+  descent-override: 22.36%;
+  line-gap-override: 0%;
+  size-adjust: 107.89%;
+}
+
+@theme {
+  --color-background: oklch(97.7% 0.008 85);
+  --color-foreground: oklch(18% 0.018 65);
+  --color-muted: oklch(47% 0.028 65);
+  --color-border: oklch(82% 0.025 75);
+  --color-surface: oklch(94% 0.012 80);
+  --color-accent: oklch(49% 0.15 35);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family:
+      "Inter Variable", "Inter Variable Fallback", system-ui, Arial,
+      sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Noto Color Emoji";
+    font-feature-settings: "cv01";
+    font-variation-settings: "opsz" auto;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .link-button {
+    @apply inline-flex h-10 items-center rounded-md border border-border px-4 text-sm font-medium transition hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+
+  .project-link {
+    @apply flex items-center justify-between rounded-md border border-border px-4 py-3 text-base font-medium transition hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+}

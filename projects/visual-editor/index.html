@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Visual Editor project" />
+    <title>Visual Editor | Portfolio</title>
+    <link rel="preload" as="image" href="/images/editor-image.jpg" />
+    <link rel="stylesheet" href="/src/global.css" />
+  </head>
+  <body>
+    <main class="mx-auto max-w-173 px-6 py-12 leading-relaxed sm:py-24">
+      <a
+        href="/"
+        class="link-outline article-underline font-medium text-gray-1200 transition-colors duration-200 ease-out"
+      >
+        Back
+      </a>
+
+      <figure
+        class="view-transition-visual-editor mt-8 overflow-hidden rounded-2xl bg-preview-bg shadow-custom"
+      >
+        <img
+          src="/images/editor-image.jpg"
+          alt=""
+          class="w-full"
+          decoding="sync"
+          fetchpriority="high"
+        />
+      </figure>
+
+      <section class="mt-8">
+        <p class="mb-2 text-gray-1100">Project</p>
+        <h1
+          class="view-transition-visual-editor-title text-2xl font-medium leading-snug text-gray-1200"
+        >
+          Visual Web Builder with Responsive Drag-and-Drop Layout Engine
+        </h1>
+        <p class="mt-2 text-sm text-gray-1000">
+          Built at
+          <a
+            class="font-medium text-gray-1200 underline decoration-gray-600 underline-offset-4 transition-colors duration-200 hover:decoration-gray-1200"
+            href="https://publ.co/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Publ
+          </a>
+        </p>
+        <p class="mt-4 text-gray-1100">
+          I worked on a production-grade visual web builder that allowed
+          business owners to create and manage responsive pages without writing
+          code. As the frontend TPM and core frontend developer, I contributed
+          from the initial POC concept to the design and implementation of the
+          editor experience, internal grid system, elastic component rules,
+          reusable block system, and draft-to-publish workflow.
+        </p>
+        <p class="mt-4 text-gray-1100">
+          The editor supported drag-and-drop layout editing, resizing,
+          multi-select, nested grouping, configurable content blocks, responsive
+          desktop/mobile layouts, and data-driven page rendering.
+        </p>
+        <h2 class="mt-8 font-medium text-gray-1200">Features</h2>
+        <ul class="project-feature-list">
+          <li>
+            Led frontend-side planning and implementation as the frontend TPM
+            and core contributor, from initial POC concept to production launch.
+          </li>
+          <li>
+            Designed and implemented the visual editor experience for business
+            users to build responsive pages without code.
+          </li>
+          <li>
+            Built a custom responsive grid layout system supporting
+            drag-and-drop positioning and block resizing.
+          </li>
+          <li>
+            Implemented separate desktop and mobile layout editing to support
+            device-specific page composition.
+          </li>
+          <li>
+            Developed multi-select interactions using keyboard modifiers,
+            enabling users to select multiple blocks and convert them into
+            groups.
+          </li>
+          <li>
+            Built nested grouping logic, allowing groups to contain blocks or
+            other groups while preserving layout constraints.
+          </li>
+          <li>
+            Implemented bounding-box-based group sizing, automatically
+            calculating group dimensions from all nested child elements.
+          </li>
+          <li>
+            Created reusable and configurable content blocks such as text,
+            image, rich text, Twitter/X embed, YouTube embed, carousel, list,
+            and slide banner blocks.
+          </li>
+          <li>
+            Defined elastic component rules so blocks could adapt to different
+            sizes, layouts, and configuration states.
+          </li>
+          <li>
+            Built editor-side configuration panels for managing block content,
+            styles, and behavior.
+          </li>
+          <li>
+            Implemented data-driven page rendering, where published pages were
+            rendered from user-defined layout and content configuration.
+          </li>
+          <li>
+            Supported draft-to-publish workflows so users could safely edit,
+            preview, and publish changes to live pages.
+          </li>
+        </ul>
+      </section>
+
+      <section class="mt-12" aria-label="Demo videos">
+        <h2 class="mb-5 font-medium text-gray-1200">Demo</h2>
+        <div class="project-video-list">
+          <article class="project-video-card">
+            <video
+              class="project-video"
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              poster="/images/visual-editor-drag-drop-poster.jpg"
+              src="/videos/visual-editor-drag-drop.mp4"
+            ></video>
+            <div class="project-video-copy">
+              <h2>Responsive Drag-and-Drop Layout Editing</h2>
+              <p>
+                Demonstrates the core layout editing experience, where users
+                can drag, position, and resize blocks within a responsive grid
+                system. The editor supports device-specific layouts, allowing
+                pages to be composed differently for desktop and mobile screens.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-video-card">
+            <video
+              class="project-video"
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              poster="/images/visual-editor-multiselect-group-poster.jpg"
+              src="/videos/visual-editor-multiselect-group.mp4"
+            ></video>
+            <div class="project-video-copy">
+              <h2>Multi-Select and Nested Grouping</h2>
+              <p>
+                Demonstrates multi-select interactions using the Shift key,
+                allowing users to select multiple blocks and convert them into a
+                group. Groups can also be nested inside other groups, enabling
+                more advanced page composition while keeping related elements
+                organized.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-video-card">
+            <video
+              class="project-video"
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              poster="/images/visual-editor-bounding-box-poster.jpg"
+              src="/videos/visual-editor-bounding-box.mp4"
+            ></video>
+            <div class="project-video-copy">
+              <h2>Bounding Box-Based Group Controls</h2>
+              <p>
+                Demonstrates how grouped elements can be edited through
+                bounding-box-based controls. When a group is opened, users can
+                reposition and resize the elements inside it, while the group
+                size is automatically calculated from the outer bounds of all
+                nested child elements, including deeply nested groups.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-video-card">
+            <video
+              class="project-video"
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              poster="/images/visual-editor-blocks-poster.jpg"
+              src="/videos/visual-editor-blocks.mp4"
+            ></video>
+            <div class="project-video-copy">
+              <h2>Configurable Elastic Content Blocks</h2>
+              <p>
+                Demonstrates reusable and configurable content blocks such as
+                text, image, rich text, Twitter/X embed, YouTube embed,
+                carousel, list, and slide banner. Each block was designed as an
+                elastic component that could adapt to different sizes, layout
+                contexts, and configuration states. The editor also included
+                configuration panels for updating block content, style, and
+                behavior without directly editing code.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
