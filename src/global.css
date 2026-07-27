@@ -971,6 +971,20 @@
     color: var(--color-gray-1200);
   }
 
+  .project-text-link {
+    font-weight: 500;
+    color: var(--color-gray-1200);
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: currentColor;
+    text-underline-offset: 0.22em;
+    transition: opacity 150ms ease;
+  }
+
+  .project-text-link:hover {
+    opacity: 0.72;
+  }
+
   .project-video-card {
     overflow: hidden;
     border-radius: 1rem;
