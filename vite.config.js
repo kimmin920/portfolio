@@ -2,6 +2,8 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import { resolve } from "node:path";
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 export default defineConfig({
   build: {
     rollupOptions: {
@@ -17,5 +19,5 @@ export default defineConfig({
       },
     },
   },
-  plugins: [tailwindcss()],
+  plugins: [tailwindcss(), cloudflare()],
 });
